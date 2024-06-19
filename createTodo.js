@@ -21,7 +21,8 @@ function update() {
     const deleteBtn = document.createElement("button");
     deleteBtn.innerText = "Delete";
     deleteBtn.addEventListener("click", () => {
-      ulList.removeChild(items);
+      todoList.splice(index, 1);
+      update();;
     });
 
     list.appendChild(deleteBtn);
