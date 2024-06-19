@@ -2,7 +2,14 @@ let input = document.getElementById("input-task");
 let ulList = document.getElementById("ul-list");
 let btn = document.getElementById("btn");
 
-btn.addEventListener("click", function () {
+btn.addEventListener("click", update);
+input.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    update();
+  }
+});
+
+function update() {
   console.log("click");
   let data = input.value;
   console.log("data", data);
@@ -23,4 +30,4 @@ btn.addEventListener("click", function () {
     ulList.appendChild(todos);
     input.value = "";
   }
-});
+}
