@@ -1,0 +1,76 @@
+body {
+  /* background-color: #f06293; */
+  background-image: linear-gradient(to right, #d194a9, #e55c8b);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 420px; */
+  height: 500px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background: rgb(60, 66, 74, 0.9);
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  color: white;
+  text-align: center;
+}
+
+.container input[type="text"] {
+  border: none;
+  border: 1px solid rgb(29, 28, 28, 0.5);
+  background: #343a40;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.container input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+#btn {
+  width: 110px;
+  margin-left: 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px;
+}
+
+.deletebtn {
+  color: red;
+  border-bottom: black;
+  text-decoration: underline;
+  background-color: unset;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  float: right;
+}
+
+.todos {
+  font-size: 14px;
+  list-style-type: none;
+  color: white;
+  /* margin-right: 40px; */
+  /* float: left; */
+}
+
+#ul-list {
+  margin-top: 30px;
+  padding: 1px;
+}

@@ -18,9 +18,11 @@ function update() {
   } else {
     let todos = document.createElement("li");
     todos.innerText = data;
+    todos.className = "todos";
 
     const deleteBtn = document.createElement("button");
     deleteBtn.innerText = "Delete";
+    deleteBtn.className = "deletebtn";
 
     deleteBtn.addEventListener("click", function () {
       ulList.removeChild(todos);
